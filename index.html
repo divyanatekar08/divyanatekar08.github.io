@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Divya Natekar | Urban AI Researcher</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Inter',sans-serif;
+            background:#f4f4f8;
+            color:#1d1d1f;
+            line-height:1.7;
+        }
+
+        header{
+            min-height:100vh;
+            background:linear-gradient(135deg,#57068c,#2d0a54);
+            color:white;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:40px;
+        }
+
+        .hero{
+            max-width:950px;
+        }
+
+        .hero h1{
+            font-size:72px;
+            margin-bottom:20px;
+            font-weight:700;
+        }
+
+        .hero h2{
+            font-size:28px;
+            font-weight:400;
+            margin-bottom:30px;
+            color:#d6c4e7;
+        }
+
+        .hero p{
+            font-size:20px;
+            max-width:800px;
+            margin:auto;
+            margin-bottom:40px;
+        }
+
+        .buttons{
+            margin-top:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin:10px;
+            padding:16px 28px;
+            border-radius:10px;
+            text-decoration:none;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .btn-primary{
+            background:white;
+            color:#57068c;
+        }
+
+        .btn-primary:hover{
+            transform:translateY(-3px);
+        }
+
+        .btn-secondary{
+            border:2px solid white;
+            color:white;
+        }
+
+        .btn-secondary:hover{
+            background:white;
+            color:#57068c;
+        }
+
+        nav{
+            position:sticky;
+            top:0;
+            background:white;
+            z-index:1000;
+            padding:18px;
+            text-align:center;
+            box-shadow:0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        nav a{
+            margin:0 18px;
+            color:#57068c;
+            text-decoration:none;
+            font-weight:600;
+            font-size:15px;
+        }
+
+        section{
+            max-width:1200px;
+            margin:auto;
+            padding:90px 30px;
+        }
+
+        section h2{
+            font-size:42px;
+            color:#57068c;
+            margin-bottom:45px;
+            text-align:center;
+        }
+
+        .card{
+            background:white;
+            padding:35px;
+            border-radius:18px;
+            box-shadow:0 6px 24px rgba(0,0,0,0.08);
+            margin-bottom:30px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-4px);
+        }
+
+        .card h3{
+            color:#2d0a54;
+            margin-bottom:15px;
+            font-size:26px;
+        }
+
+        .card h4{
+            color:#666;
+            margin-bottom:18px;
+            font-weight:500;
+        }
+
+        .card p{
+            font-size:17px;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+            gap:28px;
+        }
+
+        .skill-container{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:14px;
+        }
+
+        .skill{
+            background:white;
+            color:#57068c;
+            padding:12px 18px;
+            border-radius:30px;
+            font-weight:600;
+            box-shadow:0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .timeline{
+            border-left:4px solid #57068c;
+            padding-left:25px;
+        }
+
+        .timeline-item{
+            margin-bottom:40px;
+        }
+
+        .timeline-item h3{
+            color:#57068c;
+        }
+
+        footer{
+            background:#1d1d1f;
+            color:white;
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        footer p{
+            margin-bottom:10px;
+        }
+
+        .contact-links a{
+            color:white;
+            text-decoration:none;
+            margin:0 10px;
+        }
+
+        @media(max-width:768px){
+
+            .hero h1{
+                font-size:48px;
+            }
+
+            .hero h2{
+                font-size:22px;
+            }
+
+            nav a{
+                display:inline-block;
+                margin:10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="hero">
+
+            <h1>Divya Natekar</h1>
+
+            <h2>
+                Urban AI • Spatial Data Science • Geospatial Machine Learning • Agent-Based Modeling
+            </h2>
+
+            <p>
+                MS Urban Data Science student at NYU Center for Urban Science + Progress (CUSP),
+                working at the intersection of urban analytics, mobility modeling, machine learning,
+                remote sensing, LiDAR processing, and AI-supported decision systems.
+            </p>
+
+            <div class="buttons">
+
+                <a href="resume.pdf" target="_blank" class="btn btn-primary">
+                    View Resume
+                </a>
+
+                <a href="mailto:dyn2009@nyu.edu" class="btn btn-secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav>
+
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+
+    </nav>
+
+    <section id="about">
+
+        <h2>About</h2>
+
+        <div class="card">
+
+            <p>
+                I am a graduate student at New York University’s Center for Urban Science + Progress
+                (CUSP), where I focus on building AI-driven urban analytics systems using geospatial data,
+                human mobility patterns, machine learning, simulation models, and remote sensing pipelines.
+            </p>
+
+            <br>
+
+            <p>
+                My research explores how computational approaches such as agent-based modeling,
+                spatial interaction models, large language models, and urban-scale data science can support
+                explainable and actionable planning decisions for cities.
+            </p>
+
+            <br>
+
+            <p>
+                My work spans retail mobility simulation, wildfire prediction using satellite imagery,
+                LiDAR point-cloud processing, urban visualization systems, and AI-enhanced geospatial workflows.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section id="research">
+
+        <h2>Research Experience</h2>
+
+        <div class="card">
+
+            <h3>
+                Thinking on the Move: Agent-Based Retail Simulation for Downtown Brooklyn
+            </h3>
+
+            <h4>
+                NYU CUSP + Downtown Brooklyn Partnership | Sept 2025 – May 2026
+            </h4>
+
+            <p>
+                Developed an agent-based retail simulation framework for analyzing lunchtime mobility
+                and restaurant choice behavior in Downtown Brooklyn.
+            </p>
+
+            <br>
+
+            <p>
+                Integrated gravity-based retail models, spatial interaction methods,
+                large language models, and urban mobility datasets to model dining preferences
+                beyond traditional distance-based assumptions.
+            </p>
+
+            <br>
+
+            <p>
+                Worked with restaurant review embeddings, mobility trajectories, and POI datasets
+                to support stakeholder-oriented retail planning and intervention analysis.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Transient Object Removal from Urban LiDAR Point Clouds
+            </h3>
+
+            <h4>
+                NYU CUSP Summer Guided Research | Jun 2025 – Aug 2025
+            </h4>
+
+            <p>
+                Designed machine learning and point-cloud filtering workflows for removing
+                transient urban objects such as pedestrians and vehicles from LiDAR scans.
+            </p>
+
+            <br>
+
+            <p>
+                Improved fidelity and consistency of 3D urban models using spatial filtering,
+                segmentation methods, and point-cloud processing techniques.
+            </p>
+
+            <br>
+
+            <p>
+                Presented research findings at the BATWorks Climate Event and the NYU CUSP Research Showcase.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Urban Wildfire Risk Prediction using Remote Sensing and Deep Learning
+            </h3>
+
+            <h4>
+                NYU CUSP | 2026
+            </h4>
+
+            <p>
+                Built an urban wildfire prediction pipeline using MODIS satellite imagery,
+                NASA FIRMS wildfire datasets, deep learning methodologies, and geospatial analysis.
+            </p>
+
+            <br>
+
+            <p>
+                Explored parameter-efficient fine-tuning approaches such as LoRA and PEFT
+                for wildfire classification and urban environmental risk prediction tasks.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+
+        <h2>Selected Projects</h2>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h3>Retail Mobility Modeling</h3>
+
+                <p>
+                    Developed Huff models, multinomial logit systems,
+                    MCMC/HMC frameworks, and agent-based simulation pipelines
+                    for urban retail behavior modeling.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Wildfire Prediction Pipeline</h3>
+
+                <p>
+                    Created geospatial machine learning workflows using
+                    MODIS, FIRMS, PyTorch, Hugging Face, and remote sensing data.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>LiDAR Point Cloud Processing</h3>
+
+                <p>
+                    Built urban LiDAR filtering systems for transient object removal
+                    and improved city-scale 3D reconstruction quality.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Mech-On-Wheels</h3>
+
+                <p>
+                    Developed a prototype emergency roadside-assistance application
+                    connecting users with nearby mechanics during vehicle breakdowns.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="experience">
+
+        <h2>Industry Experience</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <h3>
+                    Software Development Intern — L&T Technology Services
+                </h3>
+
+                <h4>
+                    Jan 2023 – Jul 2023
+                </h4>
+
+                <p>
+                    Built backend components for a healthcare data platform integrating
+                    connected wearable devices with the Philips HSDP cloud ecosystem.
+                </p>
+
+                <br>
+
+                <p>
+                    Worked with Java Spring Boot, Apache Kafka, Azure services,
+                    Terraform, CI/CD workflows, Postman, Swagger, and Python-based data analysis.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skill-container">
+
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">C++</div>
+            <div class="skill">SQL</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">Deep Learning</div>
+            <div class="skill">TensorFlow</div>
+            <div class="skill">PyTorch</div>
+            <div class="skill">Scikit-learn</div>
+            <div class="skill">Pandas</div>
+            <div class="skill">NumPy</div>
+            <div class="skill">GIS</div>
+            <div class="skill">QGIS</div>
+            <div class="skill">Agent-Based Modeling</div>
+            <div class="skill">Remote Sensing</div>
+            <div class="skill">LiDAR Processing</div>
+            <div class="skill">Spatial Analytics</div>
+            <div class="skill">Urban AI</div>
+            <div class="skill">Large Language Models</div>
+            <div class="skill">Docker</div>
+            <div class="skill">Azure</div>
+            <div class="skill">Terraform</div>
+            <div class="skill">Apache Kafka</div>
+            <div class="skill">Git</div>
+
+        </div>
+
+    </section>
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="card">
+
+            <h3>
+                New York University — Tandon School of Engineering
+            </h3>
+
+            <h4>
+                MS in Urban Data Science | 2024 – 2026
+            </h4>
+
+            <p>
+                NYU Center for Urban Science + Progress (CUSP)
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Manipal University Jaipur
+            </h3>
+
+            <h4>
+                B.Tech in Computer Science & Engineering | 2019 – 2023
+            </h4>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h2 style="color:white;margin-bottom:20px;">
+            Let’s Connect
+        </h2>
+
+        <p>
+            Divya Natekar
+        </p>
+
+        <p>
+            NYU Center for Urban Science + Progress
+        </p>
+
+        <p>
+            dyn2009@nyu.edu
+        </p>
+
+        <div class="contact-links" style="margin-top:20px;">
+
+            <a href="https://github.com/divyanatekar08" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com" target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
